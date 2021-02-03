@@ -30,11 +30,16 @@ int checkForWin()
     x = 1;
   else if ( board[0][2] == board[1][1] && board[1][1] == board[2][0] )
     x = 1;
+ 
   // Checking for a possible draw outcome
   else if ( board[0][0] != '1' && board[0][1] != '2' && board[0][2] != '3'
            && board[1][0] != '4' && board[1][1] != '5' && board[1][2] != '6'
            && board[2][0] != '7' && board[2][1] != '8' && board[2][2] != '9' )
     x = -1;
-  // Returning the status of the game
+ // If nothing checks out from above, x will remain 0
+  else
+    x = 0;
+ 
+   // Returning the status of the game
   return x;
 }
