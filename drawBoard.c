@@ -1,6 +1,11 @@
+#include <stdio.h>
+#include <stdlib.h>
 
-void display_board(){
-  
+void display_board()
+{
+	// Using this function to refresh the screen
+	system("clear");
+
 	printf("Player 1 - [X] AND Player 2 - [O] \n");
 
 	printf("\t    |    |    \n");
@@ -21,6 +26,4 @@ void display_board(){
 	printf("\t  %c", board[2][0]);
 	printf(" |  %c", board[2][1]);
 	printf(" |  %c\n", board[2][2]);
-
-
 }
