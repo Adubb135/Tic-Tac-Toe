@@ -8,6 +8,8 @@ int checkForWin(void);
 int player = 1;
 int choice = 0;
 
+char board[3][3] = {{'1','2','3'},{'4','5','6'},{'7','8','9'}};
+
 int main(void)
 {
   do{
