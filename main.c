@@ -14,6 +14,8 @@ int status = 0;
  it being in the display_board function and me having to constantly run that function in 
  other functions. **/
 
+char board[3][3] = {{'1','2','3'},{'4','5','6'},{'7','8','9'}};
+
 int main(void)
 {
   do{
