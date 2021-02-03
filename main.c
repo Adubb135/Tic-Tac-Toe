@@ -10,10 +10,7 @@ int player = 1;
 int choice = 0;
 int status = 0;
 
-/** We should put the char array here so that all functions have access to it besides of 
- it being in the display_board function and me having to constantly run that function in 
- other functions. **/
-
+// Implemented char array for other functions to grab from it
 char board[3][3] = {{'1','2','3'},{'4','5','6'},{'7','8','9'}};
 
 int main(void)
@@ -40,6 +37,11 @@ int main(void)
      status = checkForWin(); 
   }while (status == 0);
   
+ // Write an if-else-if statement to determine whether or not players tied or one of them won.
+ if (status == 1)
   printf("\n=====> Player %d is the winner!!!\n\nPlayer %d, you suck at this game...", player, player = (player == 2) ? 1 : 2);
-  return 0;
+ else
+  printf("\nIt's a Tie!!!\n");
+ 
+ return 0;
 }
