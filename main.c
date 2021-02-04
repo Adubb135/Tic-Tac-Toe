@@ -37,6 +37,7 @@ int main(void)
      status = checkForWin(); 
   }while (status == 0);
   
+ display_board();
  // Write an if-else-if statement to determine whether or not players tied or one of them won.
  if (status == 1)
   printf("\n=====> Player %d is the winner!!!\n\nPlayer %d, you suck at this game...", player, player = (player == 2) ? 1 : 2);
@@ -76,7 +77,6 @@ void display_board()
 int checkForWin()
 {
   int x = 0;
-  void display_board();
   
   // Checking for all possible win conditions
   if ( board[0][0] == board[0][1] && board[0][1] == board[0][2] )
