@@ -24,3 +24,6 @@ In a 3-by-3 grid game, the player who is playing "X" always goes first. Players 
 Whelp, this the beginning! I don't have a gameplan just yet, **BUT** will make sure to update this page once I start going!  
 
 Til Then, *Au Revoir!*
+
+---Update---
+I finished the game, didn't take that much time to finish. I have a few bugs to fix, but as part as just general functionality, here it is.
